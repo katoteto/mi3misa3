@@ -77,7 +77,7 @@ h1 {
 }
 
 .debug-controls {
-  display: flex;
+  display: none !important;
   gap: 6px;
   padding: 6px;
   pointer-events: auto;
