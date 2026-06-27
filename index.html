@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>みさを誘導するゲーム</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="gameCanvas" aria-label="みさを誘導するゲーム"></canvas>
+
+      <header class="hud">
+        <div>
+          <h1>みさを誘導するゲーム</h1>
+          <p>通路上をクリック／タップすると直線移動します</p>
+        </div>
+        <div class="debug-controls">
+          <button id="toggleMask" type="button">Mask</button>
+          <button id="toggleGrid" type="button">Grid</button>
+          <button id="togglePath" type="button">Path</button>
+        </div>
+      </header>
+
+      <section id="clearPanel" class="clear-panel" hidden>
+        <p>みさはゴールに到着しました！</p>
+        <button id="restartButton" type="button">もう一度遊ぶ</button>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
