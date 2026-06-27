@@ -40,7 +40,7 @@ const sprites = {};
 const debug = {
   mask: false,
   grid: false,
-  path: true,
+  path: false,
 };
 
 const view = {
@@ -744,6 +744,8 @@ function bindControls() {
   toggleMask.addEventListener("click", () => toggleDebug("mask", toggleMask));
   toggleGrid.addEventListener("click", () => toggleDebug("grid", toggleGrid));
   togglePath.addEventListener("click", () => toggleDebug("path", togglePath));
+  toggleMask.classList.toggle("active", debug.mask);
+  toggleGrid.classList.toggle("active", debug.grid);
   togglePath.classList.toggle("active", debug.path);
 }
 
